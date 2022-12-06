@@ -3,26 +3,26 @@
 // 12821 -> да
 // 23432 -> да
 
-void Palindrome(int number2)
-{
-    if (number2 > 9999 && number2 < 100000)
-    {
-        // 12321
-        int a = number2 / 10000;
-        int b = (number2 / 1000) % 10;
-        int c = (number2 % 100) / 10;
-        int d = number2 % 10;
-        if (a == d && b == c)
-            Console.WriteLine($"Да, число {number2} является палиндромом");
-        else
-            Console.WriteLine($"Нет, число {number2} не является палиндромом");
-    }
-    else
-        System.Console.WriteLine("Вы ввели не пятизначное число");
-}
-System.Console.WriteLine("Введите любое пятизначное число ");
-int number = Convert.ToInt32(Console.ReadLine());
-Palindrome(number);
+// void Palindrome(int number)
+// {
+//     if (number > 9999 && number < 100000)
+//     {
+//         // 12321
+//         int a = number / 10000;
+//         int b = (number / 1000) % 10;
+//         int c = (number % 100) / 10;
+//         int d = number % 10;
+//         if (a == d && b == c)
+//             Console.WriteLine($"Да, число {number} является палиндромом");
+//         else
+//             Console.WriteLine($"Нет, число {number} не является палиндромом");
+//     }
+//     else
+//         System.Console.WriteLine("Вы ввели не пятизначное число");
+// }
+// System.Console.WriteLine("Введите любое пятизначное число ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Palindrome(number);
 
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -46,37 +46,37 @@ System.Console.Write("Введите координату Y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Введите координату Z2: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
-Dist(x1, x2, z1, x2, y1, z2);
+Dist(x1, y1, z1, x2, y2, z2);
 
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-void TableOfCubes(int Cube)
-{
-    if (Cube != 0)
-    {
-        if (Cube > 0)
-            for (int i = 1; i <= Cube; i++)
-            {
-                if (i < Cube)
-                    System.Console.Write($"{Math.Pow(i, 3)},");
-                else
-                    System.Console.Write($"{Math.Pow(i, 3)}");
-            }
-        else
-            for (int i = -1; i >= Cube; i--)
-            {
-                if (i > Cube)
-                    System.Console.Write($"{Math.Pow(i, 3)},");
-                else
-                    System.Console.Write($"{Math.Pow(i, 3)}");
-            }
-    }
-    else
-        Console.WriteLine("Куб числа 0 равняется 0");
-}
-System.Console.WriteLine("Введите любое число. А программа покажет таблицу кубов чисел от 1 до N");
-int cube = Convert.ToInt32(Console.ReadLine());
-TableOfCubes(cube);
+// void TableOfCubes(int Cube)
+// {
+//     if (Cube != 0)
+//     {
+//         if (Cube > 0)
+//             for (int i = 1; i <= Cube; i++)
+//             {
+//                 if (i < Cube)
+//                     System.Console.Write($"{Math.Pow(i, 3)},");
+//                 else
+//                     System.Console.Write($"{Math.Pow(i, 3)}");
+//             }
+//         else
+//             for (int i = -1; i >= Cube; i--)
+//             {
+//                 if (i > Cube)
+//                     System.Console.Write($"{Math.Pow(i, 3)},");
+//                 else
+//                     System.Console.Write($"{Math.Pow(i, 3)}");
+//             }
+//     }
+//     else
+//         Console.WriteLine("Куб числа 0 равняется 0");
+// }
+// System.Console.WriteLine("Введите любое число. А программа покажет таблицу кубов чисел от 1 до N");
+// int cube = Convert.ToInt32(Console.ReadLine());
+// TableOfCubes(cube);
